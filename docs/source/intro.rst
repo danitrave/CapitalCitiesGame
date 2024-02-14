@@ -7,6 +7,6 @@ The main concept behind the tool is that each cell type has its own probability 
 
 .. figure:: pictures/scalt_cts_workflow.png
    :align: center
-   :scale: 30%
+   :scale: 60%
 
 
