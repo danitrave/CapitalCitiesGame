@@ -12,7 +12,7 @@ SCALT is composed of 3(+1) utilities each corresponding to a different workflow 
 If needed, **format2TSV.py** can convert single cell RNA sequencing data files from either **.rds**, **.RData** or **.h5ad** to **.tsv**. Then, each service can be executed with just few commands:
 
 1. **SCALT.py** to annotate single cell RNA sequencing data;
-2. **SCALT_AnnotaionListsBuilder.py** to generate the cell type specific lists of genes from annotated data;
+2. **SCALT_AnnotationListsBuilder.py** to generate the cell type specific lists of genes from annotated data;
 3. **SCALT_NaiveListsBuilder.py** to generate the cell type specific lists of genes from user-defined lists of genes.
 
 Please see the manual for point to point instructions and tips for the execution of SCALT.
