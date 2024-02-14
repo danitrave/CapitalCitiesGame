@@ -11,14 +11,5 @@ Based on that, SCALT leverages a collection of **471** lists of cell-type specif
    :scale: 40%
 
 The outcome is a collection of equally-sized lists containg the cell type specific genes and corresponding inferred probabilities.
-Finally **SCALT.py** utilizes these pre-compiled lists to classify cells invoking a maximum likelihood based approach where the cell is assigned to that cell type having the highest difference in terms of **relative likelihood** compared to the mean cell type. 
+Finally, **SCALT.py** utilizes these pre-compiled lists to classify cells invoking a maximum likelihood based approach where the cell is assigned to that cell type having the highest difference in terms of **relative likelihood** compared to the mean cell type. 
 More datails are found in the following sections.
-
-SCALT.py - Workflow
-===================
-
-SCALT_AnnotaionListsBuilder.py - Workflow
-=========================================
-
-SCALT_NaiveListsBuilder.py - Workflow
-=====================================
