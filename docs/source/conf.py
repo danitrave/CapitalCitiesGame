@@ -2,7 +2,7 @@
 
 # -- Project information
 
-project = 'CapitalCitiesGame'
+project = 'SCALT'
 copyright = '2023 Daniele Traversa'
 author = 'Daniele Traversa'
 
