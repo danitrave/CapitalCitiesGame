@@ -10,7 +10,7 @@ SCALT integrates three different pipelines for the analysis of single cell RNA s
 SCALT.py - Workflow
 ===================
 
-**SCALT.py** 
+**SCALT.py** utilizes the pre-compiled cell type specific lists of genes originated from DISCO and Human Protein Atlas (HPA) database to classify cells from a scRNA seq counts matrix indipendently one from the others and without any kind of clustering or dimension reduction. A general workflow of the utility can be visualized in the following image:
 
 SCALT_AnnotaionListsBuilder.py - Workflow
 =========================================
