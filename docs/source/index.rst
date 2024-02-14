@@ -7,6 +7,13 @@ Welcome to SCALT's documentation!
 2. build cell type specific **lists of genes** starting from a **count matrix** and the correspoding **annotation** for each cell in a **deterministic** fashion;
 3. build cell type specific **lists of genes** starting from a **count matrix** and a a gathering of **user-defined** cell type specific lists of genes making the use of an **hypergeometric** test.
 
+SCALT is composed of 3(+1) utilities each corresponding to a different workflow previously mentioned. The application requires files to be formatted in the formats required by SCALT by applying **format2TSV.py** that can convert single cell RNA sequencing data files from either **.rds**, **.RData** or **.h5ad** to **.tsv**. Then, each service can be executed with just few commands:
+
+1. **SCALT.py** to annotate single cell RNA sequencing data;
+2. **SCALT_AnnotaionListsBuilder.py** to generate the cell type specific lists of genes from annotated data;
+3. **SCALT_NaiveListsBuilder.py** to generate the cell type specific lists of genes from user-defined lists of genes.
+
+Please see the manual for point to point instructions and tips for the execution of SCALT.
 
 .. toctree::
    :maxdepth: 2
@@ -23,9 +30,3 @@ Welcome to SCALT's documentation!
 
 If you find any issue with the software, please contact `me <mailto:daniele.traversa@unimi.it>`_, or report it  on `github <https://github.com/danitrave/CapitalCitiesGame/issues>`_.
 
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
