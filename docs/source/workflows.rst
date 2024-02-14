@@ -21,7 +21,7 @@ A general workflow of the utility can be visualized in the following image:
 SCALT: lists building from annotation - Workflow
 ================================================
 
-**SCALT_AnnotaionListsBuilder.py**. 
+**SCALT_AnnotaionListsBuilder.py** makes use of a scRNA seq read counts matrix and the corresponding cells annotation to build series of equally-sized cell type specific lists of genes, one per each cell type present in the annotation, in a deterministic fashion.
 
 The following picture reports a general workflow of the pipeline:
 
@@ -32,7 +32,7 @@ The following picture reports a general workflow of the pipeline:
 SCALT: lists building from user-defined lists - Workflow
 ========================================================
 
-**SCALT_NaiveListsBuilder.py**
+**SCALT_NaiveListsBuilder.py** requires a scRNA read counts data and series of user-defined lists of genes, one per each potential cell type. The tool exploits an **hypergeometric test** and the lists of genes to generate a *naive annotation* of cells. The latter and the original counts matrix are utilized to build series of equally-sized cell type specific lists of genes, one per each cell type present in the naive annotation, in a deterministic fashion.
 
 Here the general workflow is reported:
 
