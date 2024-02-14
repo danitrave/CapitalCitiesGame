@@ -8,6 +8,7 @@ Welcome to SCALT's documentation!
 3. build cell type specific **lists of genes** starting from a **count matrix** and a a gathering of **user-defined** cell type specific lists of genes making the use of an **hypergeometric** test.
 
 SCALT is composed of 3(+1) utilities each corresponding to a different workflow previously mentioned. The application requires files to be formatted in the formats required by SCALT.
+
 If needed, **format2TSV.py** csn convert single cell RNA sequencing data files from either **.rds**, **.RData** or **.h5ad** to **.tsv**. Then, each service can be executed with just few commands:
 
 1. **SCALT.py** to annotate single cell RNA sequencing data;
