@@ -1,5 +1,5 @@
 Welcome to SCALT's documentation!
-=============================================
+=================================
 
 **SCALT** provides a collection of python utilities that can be used to:
 
@@ -21,12 +21,4 @@ Please see the manual for point to point instructions and tips for the execution
    
    intro.rst
 
-.. toctree::
-   :maxdepth: 2
-   :caption: Playing
-
-   play.rst
-
-
-If you find any issue with the software, please contact `me <mailto:daniele.traversa@unimi.it>`_, or report it  on `github <https://github.com/danitrave/CapitalCitiesGame/issues>`_.
 
