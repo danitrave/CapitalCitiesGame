@@ -18,24 +18,22 @@ A general workflow of the utility can be visualized in the following image:
    :align: center
    :scale: 40%
 
-
-
 SCALT: lists building from annotation - Workflow
 ================================================
 
 **SCALT_AnnotaionListsBuilder.py**. 
+
 The following picture reports a general workflow of the pipeline:
 
 .. figure:: pictures/SCALT_listbuildAnno.png
    :align: center
    :scale: 40%
 
-
-
 SCALT: lists building from user-defined lists - Workflow
 ========================================================
 
 **SCALT_NaiveListsBuilder.py**
+
 Here the general workflow is reported:
 
 .. figure:: pictures/SCALT_listsbuildNaive.png
