@@ -8,8 +8,6 @@ Welcome to SCALT's documentation!
 3. build cell type specific **lists of genes** starting from a **count matrix** and a a gathering of **user-defined** cell type specific lists of genes making the use of an **hypergeometric** test.
 
 
-If you find any issue with the software, please contact `me <mailto:daniele.traversa@unimi.it>`_, or report it  on `github <https://github.com/danitrave/CapitalCitiesGame/issues>`_.
-
 .. toctree::
    :maxdepth: 2
    :caption: Learing
@@ -21,3 +19,13 @@ If you find any issue with the software, please contact `me <mailto:daniele.trav
    :caption: Playing
 
    play.rst
+
+
+If you find any issue with the software, please contact `me <mailto:daniele.traversa@unimi.it>`_, or report it  on `github <https://github.com/danitrave/CapitalCitiesGame/issues>`_.
+
+Indices and tables
+==================
+
+* :ref:`genindex`
+* :ref:`modindex`
+* :ref:`search`
