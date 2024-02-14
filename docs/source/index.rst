@@ -17,9 +17,9 @@ Please see the manual for point to point instructions and tips for the execution
 
 .. toctree::
    :maxdepth: 2
-   :caption: Learing
+   :caption: SCALT in brief
    
-   learn.rst
+   intro.rst
 
 .. toctree::
    :maxdepth: 2
