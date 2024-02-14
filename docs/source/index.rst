@@ -21,4 +21,9 @@ Please see the manual for point to point instructions and tips for the execution
    
    intro.rst
 
+.. toctree::
+   :maxdepth: 2
+   :caption: SCALT workflows
+   
+   workflows.rst
 
