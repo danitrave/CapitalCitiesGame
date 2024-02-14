@@ -1,5 +1,5 @@
-SCALT in brief
-==============
+SCALT - Key features
+====================
 
 
 
