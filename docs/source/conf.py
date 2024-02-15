@@ -3,7 +3,7 @@
 # -- Project information
 
 project = 'SCALT'
-copyright = '2023 Daniele Traversa'
+copyright = '2024 Daniele Traversa'
 author = 'Daniele Traversa'
 
 release = '0.1'
