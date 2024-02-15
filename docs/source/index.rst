@@ -41,4 +41,11 @@ Please see the manual for point to point instructions and tips for the execution
    
    prerequisites.rst
 
+Indices and tables
+==================
+
+* :ref:`genindex`
+* :ref:`modindex`
+* :ref:`search`
+
 
