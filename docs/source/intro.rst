@@ -1,15 +1,17 @@
-Key concepts
-============
+For impatient people
+====================
 
-SCALT (Single Cell Annotation Likelihood Tool) introduces a paradigm-shift for the analysis of scRNAseq data. Cells are annotated to a specific type at individual level, by using a simple but elegant method based on maximum likelihood, **without** the need for **clustering**, **dimensionality reduction** or **manual annotation**. 
+The tool must be executed on a Conda envirnoment which can be installed following the steps reported in the **prerequisites** section of this manual.
 
-The main concept behind the tool is that each *cell type has its own probability of expressing a gene*. 
-Based on that, SCALT leverages a collection of **471** lists of cell-type specific genes, constructed by extensive re-analysis of comprehensive and expert curated catalogues i.e. **Human Protein Atlas** and **DISCO** employing a multi-step pipeline described in the following workflow:
+SCALT requires a scRNA counts matrix in **.tsv** format reporting genes on the rows and cells ids on the columns and the program to be excecuted is called **SCALT.py** 
 
-.. figure:: pictures/scalt_cts_workflow.png
-   :align: center
-   :scale: 40%
+SCALT classifies each cell to one of the 471 cell types available using the followinmg command:
 
-The outcome is a collection of equally-sized lists containg the cell type specific genes and corresponding inferred probabilities.
-Finally, **SCALT.py** utilizes these pre-compiled lists to classify cells invoking a maximum likelihood based approach where the cell is assigned to that cell type having the highest difference in terms of **relative likelihood** compared to the mean cell type. 
-More datails are found in the following sections.
+::
+
+   python3 SCALT.py read_counts.tsv 
+
+The outpus are:
+
+1. a **REPORT.html** file reporting a collection of plots that summarize the results of the experiment;
+2. a directory called **results_directory** which contains all the metadata originated from the analysis. 
