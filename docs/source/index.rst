@@ -37,3 +37,10 @@ If you want to learn more about, please see the manual for point to point instru
    :caption: SCALT: Classification
    
    classification.rst
+
+.. toctree::
+   :maxdepth: 2
+   :caption: SCALT: Use case
+   
+   useCaseClassification.rst
+
