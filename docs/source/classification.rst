@@ -159,11 +159,11 @@ The visualized documentation should appear as follows:
                 Sample
 
 1. **Sample** is the only positional argument of the tool. It represents the name of the counts matrix;
-2. **-Min** or **- -Threshold** is the minimum number of genes that a cell must express to be classified. The **default** value is **250**;
-3. **-Notation** or **- -Notation** is the type of gene notation to use. The defaul is **ensembl id**. Instead, write **gene_symbol** to switch to gene symbol notation;
-4. **-Types** or **- -Types** is the directory name containg the lists of the cell types to use in the likelihood test. By default, only the pre-compiled lists (DISCO, HPA) are used. To use only the custom lists generated from annotation, insert **custom**. Finally, to utilize only the custom lists generated from the user-defined lists, insert **naive**;
-5. **-CPUs** or **- -CPUs** is number of processors employed. The default is **1**;
-6. **-h** or **- -help** shows the documentation.
+2. **-Min** or **--Threshold** is the minimum number of genes that a cell must express to be classified. The **default** value is **250**;
+3. **-Notation** or **--Notation** is the type of gene notation to use. The defaul is **ensembl id**. Instead, write **gene_symbol** to switch to gene symbol notation;
+4. **-Types** or **--Types** is the directory name containg the lists of the cell types to use in the likelihood test. By default, only the pre-compiled lists (DISCO, HPA) are used. To use only the custom lists generated from annotation, insert **custom**. Finally, to utilize only the custom lists generated from the user-defined lists, insert **naive**;
+5. **-CPUs** or **--CPUs** is number of processors employed. The default is **1**;
+6. **-h** or **--help** shows the documentation.
 
 Run SCALT
 =========
