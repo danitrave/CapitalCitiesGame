@@ -35,3 +35,10 @@ Please see the manual for point to point instructions and tips for the execution
    
    databases.rst
 
+.. toctree::
+   :maxdepth: 2
+   :caption: Prerequisites
+   
+   prerequisites.rst
+
+
