@@ -180,8 +180,12 @@ The documentation should appear as follows:
 5. **-CPUs** or **--CPUs** is number of processors employed. The default is **1**;
 6. **-h** or **--help** shows the documentation.
 
-Run SCALT
+Run SCALT.py
 =========
+
+SCALT.py is quite straightforward sine it requires just the counts table as postional input. Leaving default parameters, the basic comand appears as follows:
+
+
 
 Report
 ======
