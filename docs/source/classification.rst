@@ -141,16 +141,31 @@ An example of the input file is reported below.
      - 1
      - 1
 
+The application return two output:
+
+1. a file in **.html** format composed of a collection of plots reporting the general statistics and classification results of the analysis. Further details are described in the **REPORT** section of the manual;
+2. a directory names **results_directory** hosting a collection of metadata produced upon classification.
+
+The metadata lists a series of files which are produced automatically during the classification step and are required for the generatio of the report. Among them, we find:
+
+1. **p_values.tsv**, a tabular file reporting a collection of p-values per each cell. Each p-value correspond to a likehood test. Therefore, the number corresponds to the number of cell types tested;
+2. **deltas.tsv**, a tabular file reporting a series of likelihood differences between the cell type specific model and the mean cell type. The number corresponds to the number of cell types tested;
+3. **originalTables_zipped.zip**,a  zipped file containing the original counts;
+4. **_adj.tsv** file. Counts table upon input set-up performed by SCALT.py by default;
+5. **_adj_genesExpressed_filter.tsv** file. Tabular file reporting either **PASS** or **EXCLUDE** if the cell expresses at least the minimum number of genes set in the -Min parameter or not;
+6. **barplot_cellTypesAboundance.html**, **barplot_survivedCells.html**, **UMAP_2D.html** and **UMAP_3D.html**. Collection of plots visualised in the report file.
+
+
 SCALT parameters
 ================
 
-The list of arguments and paramenters can be visualized typing the following command:
+SCALT.py makes usage of a collection of both arguments and parameters that can visualized typing the following command:
 
 :: 
 
   python3 SCALT.py -h
 
-The visualized documentation should appear as follows:
+The documentation should appear as follows:
 
 ::
 
