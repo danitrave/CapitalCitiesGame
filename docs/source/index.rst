@@ -2,6 +2,7 @@ Welcome to SCALT's documentation!
 =================================
 
 **SCALT** (Single Cell Annotation Likelihood Tool) is an innovative tool which classifies cells from single cell RNA seq experiments at single cell resolution level taking the advantage of a maximum likelihood-based approach and a collection of pre-compiled cell type specific lists of genes constructed by extensive re-analysis of comprehensive and expert curated catalogues. 
+
 The application does not require any **clustering**, **dimensionality reduction** or **manual annotation**.
 
 For further details, we advise to read the paper available at **DOI**
