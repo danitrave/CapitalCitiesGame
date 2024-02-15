@@ -266,3 +266,7 @@ Running SCALT.py, the following workflow is performed:
 .. figure:: pictures/SCALT_workflow.png
    :align: center
    :scale: 50%
+
+
+
+
