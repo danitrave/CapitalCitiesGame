@@ -1,4 +1,4 @@
-Input format
+Inputs & Outputs
 ============
 
 SCALT parameters
@@ -7,8 +7,5 @@ SCALT parameters
 Run SCALT
 =========
 
-Maximum Likelihood Test
-=======================
-
-Outputs and Report
+Report
 ==================
