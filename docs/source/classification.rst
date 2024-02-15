@@ -183,7 +183,9 @@ The documentation should appear as follows:
 Run SCALT.py
 =========
 
-SCALT.py is quite straightforward sine it requires just the counts table as postional input. Leaving default parameters, the basic comand appears as follows:
+SCALT.py is quite straightforward sine it requires just the counts table as postional input. 
+
+Leaving default parameters, the basic comand appears as follows:
 
 ::
 
