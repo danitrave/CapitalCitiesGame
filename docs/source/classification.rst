@@ -189,7 +189,7 @@ Leaving default parameters, the basic comand appears as follows:
 
 ::
 
-   python3 SCALT.py read_counts.py
+   python3 SCALT.py read_counts.tsv
 
 By default, the ensembl id is used. 
 
@@ -197,37 +197,37 @@ If the **gene symbol** is used in the counts matrix, the notation must be specif
 
 ::
 
-   python3 SCALT.py read_counts.py -Notation gene_symbol
+   python3 SCALT.py read_counts.tsv -Notation gene_symbol
 
 Or:
 
 ::
 
-   python3 SCALT.py read_counts.py --Notation gene_symbol
+   python3 SCALT.py read_counts.tsv --Notation gene_symbol
 
 By default, a cell is classified if it expresses at leat **250** genes. Managing the SCALT.py parameters, this threshold che be modified as follows:
 
 ::
 
-   python3 SCALT.py read_counts.py -Min 500
+   python3 SCALT.py read_counts.tsv -Min 500
 
 Or:
 
 ::
 
-   python3 SCALT.py read_counts.py --Threshold 500
+   python3 SCALT.py read_counts.tsv --Threshold 500
 
 In addition, the computational time can be reduced if the number of processors is increased as reported:
 
 ::
 
-   python3 SCALT.py read_counts.py -CPUs 4
+   python3 SCALT.py read_counts.tsv -CPUs 4
 
 Or:
 
 ::
 
-   python3 SCALT.py read_counts.py --CPUs 4
+   python3 SCALT.py read_counts.tsv --CPUs 4
 
 Make sure to have available the number of desidered processors in your machine.
 
@@ -235,13 +235,13 @@ To conclude, the different parameters can be modified in a unique call:
 
 ::
 
-   python3 SCALT.py read_counts.py -Notation gene_symbol -Min 500 -CPUs 4
+   python3 SCALT.py read_counts.tsv -Notation gene_symbol -Min 500 -CPUs 4
 
 Or:
 
 ::
 
-   python3 SCALT.py read_counts.py --Notation gene_symbol --Threshold 500 --CPUs 4
+   python3 SCALT.py read_counts.tsv --Notation gene_symbol --Threshold 500 --CPUs 4
 
 The order of parameters is irrelevant.
 
