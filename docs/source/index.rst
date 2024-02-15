@@ -19,21 +19,15 @@ If you want to learn more about, please see the manual for point to point instru
 
 .. toctree::
    :maxdepth: 2
-   :caption: SCALT workflows
+   :caption: Prerequisites
    
-   workflows.rst
+   prerequisites.rst
 
 .. toctree::
    :maxdepth: 2
    :caption: Databases
    
    databases.rst
-
-.. toctree::
-   :maxdepth: 2
-   :caption: Prerequisites
-   
-   prerequisites.rst
 
 .. toctree::
    :maxdepth: 2
