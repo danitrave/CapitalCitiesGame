@@ -1,6 +1,3 @@
-SCALT: Classification
-=====================
-
 Input format
 ============
 
