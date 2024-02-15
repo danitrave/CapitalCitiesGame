@@ -143,7 +143,7 @@ An example of the input file is reported below.
 
 The application return two output:
 
-1. a file in **.html** format composed of a collection of plots reporting the general statistics and classification results of the analysis. Further details are described in the **REPORT** section of the manual;
+1. a report file in **.html** format;
 2. a directory names **results_directory** hosting a collection of metadata produced upon classification.
 
 The metadata lists a series of files which are produced automatically during the classification step and are required for the generatio of the report. Among them, we find:
@@ -248,3 +248,12 @@ The order of parameters is irrelevant.
 
 Report
 ======
+
+The report is a file in html format composed of a collection of plots reporting the general statistics and classification results of the analysis. The file reports four different plots:
+
+1. a bar plot showing how many cells present or not the minimum number of genes expressed for classification;
+2. a second barplot counting how many cells were classified to a cell type cathegory;
+3. a 2D UMAP;
+4. a 3D UMAP.
+
+**Important to note**: the genes used for the creation of the UMAPs coordinates are the union of genes coming from the 471 lists of genes without repetitions.
