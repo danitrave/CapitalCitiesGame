@@ -257,3 +257,9 @@ The report is a file in html format composed of a collection of plots reporting 
 4. a 3D UMAP.
 
 **Important to note**: the genes used for the creation of the UMAPs coordinates are the union of genes coming from the 471 lists of genes without repetitions.
+
+Workflow 
+========
+
+Running SCALT.py, the following workflow is performed:
+
