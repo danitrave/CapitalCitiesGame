@@ -267,6 +267,8 @@ Running SCALT.py, the following workflow is performed:
    :align: center
    :scale: 50%
 
-
+1. **inputPreparation.py** is a python script that adjustes the input counts table in order to be properly analyzed by SCALT.py;
+2. **likelihood_ratio_test.py** is the python script that performs the actual likelihood test;
+3. **reportGenerator.py** is the python script that creates the final report.
 
 
