@@ -43,6 +43,6 @@ Please see the manual for point to point instructions and tips for the execution
 
 .. toctree::
    :maxdepth: 2
-   :caption: Prerequisites
+   :caption: SCALT: Classification
    
    classification.rst
