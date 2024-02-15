@@ -8,5 +8,5 @@ To install Conda and the SCALT envirnoment, follow the following steps.
 Conda Installer download
 ========================
 
-Open your favorite brwoser and visit the `Anaconda distribution page <https://www.anaconda.com/download>_`
+Open your favorite brwoser and visit the `Anaconda distribution page <https://www.anaconda.com/download>`_
 
