@@ -41,3 +41,8 @@ Please see the manual for point to point instructions and tips for the execution
    
    prerequisites.rst
 
+.. toctree::
+   :maxdepth: 2
+   :caption: Prerequisites
+   
+   classification.rst
