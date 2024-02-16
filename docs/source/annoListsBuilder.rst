@@ -10,7 +10,8 @@ The counts matrix must present genes on the rows and cells on the columns. The f
 
 An example of the annotation table is reported here:
 
-.. list-table::  
+.. list-table:: 
+   :align: center
    :widths: 80 
    :header-rows: 1
 
@@ -21,20 +22,6 @@ An example of the annotation table is reported here:
    * - alpha
    * - alpha
    * - alpha
-   * - ductal
-   * - ductal
-   * - acinar
-   * - beta
-   * - activated_stellate
-   * - alpha
-   * - beta
-   * - delta 
-   * - delta
-   * - delta
-   * - gamma
-   * - gamma
-   * - quiescent_stellate
-   * - epsilon
 
 Parameters
 ==========
