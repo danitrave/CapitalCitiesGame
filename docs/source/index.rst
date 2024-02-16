@@ -62,5 +62,9 @@ If you want to learn more about, please see the manual for point to point instru
    
    naiveListsBuilder.rst
 
-
+.. toctree::
+   :maxdepth: 2
+   :caption: SCALT: For Brave People
+   
+   bravePeople.rst
 
