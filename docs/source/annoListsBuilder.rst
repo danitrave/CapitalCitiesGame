@@ -143,3 +143,22 @@ The order of parameters is irrelevant.
 Outputs
 =======
 
+The tool returns two output:
+
+1. a directory called **custom** containing the final lists of genes;
+2. a directory named **AnnolistsBuilder_results** hosting a collection of metadata.
+
+The metadata consists in a series of files and directories which are produced automatically during the process and were utilized for the generation of the final lists:
+  
+1. **originalTables_zipped.zip** is a zipped repository containing the original input data;
+2. **groupped_cell_types** is the directory that containg the counts matrix split per cell type. Each tsv file groups the cells annotated with same cell type;
+3. **boostraps_samples** is the folder in which all the boostrap samples are saved;
+4. **genesGeneral_probabilities.tsv** is a tabular file that reports the probability of each gene to be expressed in a generical cell estimated from the boostrap samples;
+5. **genesCellTypes_probabilities.tsv** is a table that provides the the probability of each gene to be expressed in any cell type from the annotation. As already mentioned, the probability is estimated from the boostrap samples;
+6. **genesProbabilities_ratios.tsv** is a tab separated file reporting the ratios between the two previously mentioned probabilities;
+7. **genesRanking.tsv** show the ranking of the genes on the basis of the ratios reported in the genesProbabilities_ratios.tsv file;
+8. **genes_entropy.tsv** given the entropy of each gene calculated over the probabilites of a gene to be expressed in any cell type;
+9. **genes2remove.tsv** lists the genes to remove from the final lists;
+10. **cellTypes_fromAnnotationHeatmap.png** is an heatmap showing the percentage of overlap among each couple of final cell type specific list of genes;
+11. **TABLE_OF_GENES.tsv** is a simple tabular file reporting the genes from the counts in the proper order.
+
