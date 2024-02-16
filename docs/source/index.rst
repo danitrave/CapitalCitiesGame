@@ -56,5 +56,11 @@ If you want to learn more about, please see the manual for point to point instru
    
    annoListsBuilder.rst
 
+.. toctree::
+   :maxdepth: 2
+   :caption: SCALT: Build Lists From User-defiend Lists
+   
+   naiveListsBuilder.rst
+
 
 
