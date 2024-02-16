@@ -26,6 +26,21 @@ An example of the annotation table is reported here:
 Parameters
 ==========
 
+SCALT_AnnotaionListsBuilder.py takes the advantage of a collection of both arguments and parameters that can visualized typing the following command:
+
+:: 
+
+  python3 SCALT_AnnotaionListsBuilder.py -h
+
+The documentation should appear as follows:
+
+::
+
+   usage: SCALT_AnnotaionListsBuilder.py [-h] [-Boo --Boostraps] [-Cells --Cells]
+                                      [-Genes --Genes] [-Notation --Notation]
+                                      [-CPUs --CPUs]
+                                      Sample Annotation
+
 Run SCALT_AnnotaionListsBuilder.py
 ==================================
 
