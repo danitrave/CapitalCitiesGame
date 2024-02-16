@@ -62,7 +62,7 @@ Leaving default parameters, the basic comand appears as follows:
 
    python3 SCALT_AnnotaionListsBuilder.py read_counts.tsv annotation.tsv
 
-By default, the ensembl id is used. 100 boostrap samples are generated in which 100 cells will be randomly sampled per each cell type. At the end, the final lists will contain 100 genes each. The number of processors used is 1.
+By default, it is assumed that the counts have the ensembl id for genes notation. 100 boostrap samples are generated in which 100 cells will be randomly sampled per each cell type. At the end, the final lists will contain 100 genes each. The number of processors used is 1.
 
 If the **gene symbol** is used in the counts matrix, the notation must be specified as follows:
 
