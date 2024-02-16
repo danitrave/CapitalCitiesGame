@@ -153,7 +153,7 @@ Outputs
 The tool returns two output:
 
 1. a directory called **naive** containing the final lists of genes;
-2. a directory named **naiveLists_generation** hosting a collection of metadata.
+2. a directory named **NaivelistsBuilder_results** hosting a collection of metadata.
 
 The metadata consists in a series of files and directories which are produced automatically during the process and were utilized for the generation of the final lists:
   
