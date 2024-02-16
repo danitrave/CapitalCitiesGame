@@ -6,7 +6,7 @@ SCALT.py requires a scRNA seq row counts matrix as input data. The matrix must b
 1. genes on the rows;
 2. cells on the columns.
 
-The first row of the matrix must contain the ids of each cell while the first column must provide the gene ids expressed either in **gene symbol** or **ensembl id**. 
+The first row of the matrix must contain the ids of each cell while the first column must provide the gene ids written either as **gene symbol** or **ensembl id**. 
 
 An example of the input file is reported below.
 
