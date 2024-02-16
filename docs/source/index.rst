@@ -44,3 +44,10 @@ If you want to learn more about, please see the manual for point to point instru
    
    useCaseClassification.rst
 
+.. toctree::
+   :maxdepth: 2
+   :caption: SCALT: Advanced
+   
+   advanced.rst
+
+
