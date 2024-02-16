@@ -41,6 +41,16 @@ The documentation should appear as follows:
                                       [-CPUs --CPUs]
                                       Sample Annotation
 
+
+1. **Sample** is the first positional argument and addresses the name of the counts matrix;
+2. **Annotation** is the second positional argument and refers to the name of the annotation table;
+3. **-Boo** or **--Boostraps** indicates the number of boostrap samples to generate. The default number is **100**;
+4. **-Cells** or **--Cells** specifies the number of cells to pick randomly per each cell type during the probability inference process. By default, the number is set to **100**;
+5. **-Genes** or **--Genes** refers to the number of genes that the final cel type lists of genes must contain at the end. The default number is **100**;
+6. **-Notation** is used to underline the kind of gene notation present in the counts. The user can choose between **gene_symbol** or **ensembl_id**. By default, ensembl_id is set;
+7. **-CPUs** or **--CPUs** indicates the number of processors to use. By default, **1** is used.
+
+
 Run SCALT_AnnotaionListsBuilder.py
 ==================================
 
