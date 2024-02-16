@@ -17,15 +17,15 @@ The steps and the relative programs of SCALT aimed to build the lists of genes f
 
 .. figure:: pictures/SCALT_listbuildAnno.png
    :align: center
-   :scale: 40%
+   :scale: 40% 
 
-1. **inputPreparation.py**
-2. **cell_type_grouper.py**
-3. **randomCells_selector.py**
-4. **probabilities_tables_generator.py**
-5. **statistics_calculator.py**
-6. **genesRanker_byRatio.R**
-7. **entropy_calculator.py**, **CTs_lists_generator.py** and **customLists_refinement.py**
+1. **inputPreparation.py** has the role of setting the input files in a format suitable for the pipeline;
+2. **cell_type_grouper.py** takes the counts matrix and the annotation table as input and it groups the cells from the matrix on the basis of the annotation;
+3. **randomCells_selector.py** randomly selects the same number of cells per each cell type saving them in a new file. The number of cells is dictated by the user;
+4. **probabilities_tables_generator.py** uses the previously generate table of cells to infer the probabilities for the current subset of cells. The probabilities table generated estimate 1) the probability for a gene to be expressed in any ; 2) the probability for a gene to be expressed in any cell type reported in the annotation table;
+5. **statistics_calculator.py** estimates the mean probabilites table from the previously tables generated via **boostrap** approach. The latter consists in a recurrent sampling of cells per cell type and consequnet probability estimation itertivelly performed a number of times selected by the user. The higher is the number of **boostrap** samples, the higher is the sampling power and consequent accuracy of the probability estimation;
+6. **genesRanker_byRatio.R** uses the probabilities ratios for each cell type and orders them in descending order ranking the genes from the most specific to the least specific for each cell type;
+7. **entropy_calculator.py**, **CTs_lists_generator.py** and **customLists_refinement.py** are involved respectivelly in: 1) removal of **housekeeping genes**; 2) generation of the cell type specific lists of genes; 3) refinement of the lists.
 
 Please, follow the next sections of the manual for instructions and tips.
 
@@ -38,14 +38,10 @@ The steps and the relative programs of SCALT aimed to build the lists of genes f
    :align: center
    :scale: 40%
 
+The majority of the steps coincide with the generation of the lists starting from an annotation table.
 
-1. **inputPreparation.py**
-2. **hypergeometric.R**
-3. **cell_type_grouper.py**
-4. **randomCells_selector.py**
-5. **probabilities_tables_generator.py**
-6. **statistics_calculator.py**
-7. **genesRanker_byRatio.R**
-8. **entropy_calculator.py**, **CTs_lists_generator.py** and **customLists_refinement.py**
+In this case, the annotation table is computed expoiting an **hypergeometric** test generating a **naive** annotation. The program **hypergeometric.R** takes the counts matrix and the file with the user-defined lists of genes as input. The program considers each cell indipendently and the logic behind is the following. The genes expressed in each cell are collected and tested with each list of genes using an hypoergeometric distribution that verifies how likely is to find such intersection between the two list of genes just by chance. The lower is that probability the higher is the confidence behind that annotation. At the end, each cell will be flagged with that annotation with the highest confidence (i.e. lowest FDR). 
+
+Since the other steps of the workflow are identical to the previous pipeline, no further repetions will be added.
 
 Please, follow the next sections of the manual for instructions and tips.
