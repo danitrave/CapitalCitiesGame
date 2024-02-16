@@ -13,16 +13,39 @@ Workflows
 Build the cell-type specific lists of genes starting from pre-annotated data
 ----------------------------------------------------------------------------
 
+The steps and the relative programs of SCALT aimed to build the lists of genes from an annotaion file are summarized in the following workflow: 
+
 .. figure:: pictures/SCALT_listbuildAnno.png
    :align: center
    :scale: 40%
 
+1. **inputPreparation.py**
+2. **cell_type_grouper.py**
+3. **randomCells_selector.py**
+4. **probabilities_tables_generator.py**
+5. **statistics_calculator.py**
+6. **genesRanker_byRatio.R**
+7. **entropy_calculator.py**, **CTs_lists_generator.py** and **customLists_refinement.py**
+
+Please, follow the next sections of the manual for instructions and tips.
+
 Build the cell-type specific lists of genes starting from user-defined lists
 ----------------------------------------------------------------------------
+
+The steps and the relative programs of SCALT aimed to build the lists of genes from a collection of user-defined lists are summarized in the following workflow: 
 
 .. figure:: pictures/SCALT_listsbuildNaive.png
    :align: center
    :scale: 40%
 
+
+1. **inputPreparation.py**
+2. **hypergeometric.R**
+3. **cell_type_grouper.py**
+4. **randomCells_selector.py**
+5. **probabilities_tables_generator.py**
+6. **statistics_calculator.py**
+7. **genesRanker_byRatio.R**
+8. **entropy_calculator.py**, **CTs_lists_generator.py** and **customLists_refinement.py**
 
 Please, follow the next sections of the manual for instructions and tips.
