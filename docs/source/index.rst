@@ -52,13 +52,13 @@ If you want to learn more about, please see the manual for point to point instru
 
 .. toctree::
    :maxdepth: 2
-   :caption: SCALT: Build Lists From Annotation
+   :caption: SCALT: From Annotation
    
    annoListsBuilder.rst
 
 .. toctree::
    :maxdepth: 2
-   :caption: SCALT: Build Lists From User-defiend Lists
+   :caption: SCALT: From User-defiend Lists
    
    naiveListsBuilder.rst
 
