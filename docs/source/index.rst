@@ -62,3 +62,10 @@ If you want to learn more about, please see the manual for point to point for in
    
    bravePeople.rst
 
+.. toctree::
+   :maxdepth: 2
+   :caption: Auxiliary programs
+   
+   auxiliary.rst
+
+
