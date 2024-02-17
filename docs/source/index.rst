@@ -7,12 +7,12 @@ The application does not require any **clustering**, **dimensionality reduction*
 
 For further details, we advise to read the paper available at **DOI**
 
-As mentioned in the paper, SCALT is composed of other advanced utilities that allow to perform more complex analysis such as:
+As mentioned in the paper, SCALT is composed of other parallel utilities that allow to perform more complex analysis such as:
 
-1. build cell type specific **lists of genes** starting from a **count matrix** and the correspoding **annotation** for each cell in a **deterministic** fashion;
-2. build cell type specific **lists of genes** starting from a **count matrix** and a a gathering of **user-defined** cell type specific lists of genes making the use of an **hypergeometric** test.
+1. build cell type specific **lists of genes**  in a **deterministic** fashion starting from a **counts matrix** and the correspoding **annotation** for each cell;
+2. build cell type specific **lists of genes** starting from a **count matrix** and a gathering of **user-defined** cell type specific lists of genes making the use of an **hypergeometric** test.
 
-If you want to learn more about, please see the manual for point to point instructions and tips.
+If you want to learn more about, please see the manual for point to point for instructions and tips.
 
 .. toctree::
    :maxdepth: 2
