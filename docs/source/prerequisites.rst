@@ -1,15 +1,15 @@
 Conda Installation
 =====
  
-SCALT is written in python, R and bash programming language. To ensure the versatility accross different operating systems, SCALT requires the installation of a **Conda** environment. Conda is a powerful command line tool for package and environment management that runs on Windows, macOS, and Linux.
+SCALT is written in python, R and bash programming language. To ensure the adaptability accross different operating systems, SCALT requires the installation of a **Conda** environment. Conda is a powerful command line tool for package and environment management that runs on Windows, macOS, and Linux.
 
-To install Conda, visit the `Conda Installation Page <https://conda.io/projects/conda/en/latest/user-guide/install/index.html>`_ and follow step by step for the regular installation for your operating system.
+To install Conda, visit the `Conda Installation Page <https://conda.io/projects/conda/en/latest/user-guide/install/index.html>`_ and follow the instructions step by step for the regular installation on your operating system.
 
 
 SCALT download
 ==============
 
-Subsequent to the installation of Conda, make sure that conda is activated with the following command:
+Subsequent to the installation of conda, make sure that conda is activated with the following command:
 
 ::
 
@@ -28,7 +28,7 @@ Move to the SCALT directory making use of **cd** command as follows:
 
   cd path/to/directory/SCALT
 
-Inside the directory, the configuration file **SCALT_conda_envSetup.yml** enables the installation of the proper SCALT environment in which all the packages and programs required for the tool are provided. To properly install the environment, run the following command:
+Inside the directory, the configuration file **SCALT_conda_envSetup.yml** enables the installation of the proper SCALT environment in which all the packages and programs required for the tool are provided. Install the environment running the following command:
 
 ::
 
