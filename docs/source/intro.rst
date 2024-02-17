@@ -1,11 +1,11 @@
 For impatient people
 ====================
 
-The tool must be executed on a Conda envirnoment which can be installed following the steps reported in the **prerequisites** section of this manual.
+The tool must be executed on a Conda envirnoment which can be installed following the steps reported in the **PREREQUISITES** section of this manual.
 
-SCALT requires a scRNA **read counts** matrix having the genes on the rows and the cells ids on the columns and the gene notationm reported in the table, either **gene_symbol** or **ensembl_id**. The program to be excecuted is called **SCALT.py** 
+SCALT requires a scRNA **read counts** matrix, having the genes on the rows and the cells ids on the columns, and the **gene notation** reported in the table, either **gene_symbol** or **ensembl_id**. The program for classification is called **SCALT.py** 
 
-SCALT classifies each cell to one of the 471 cell types available using the followinmg command:
+SCALT classifies each cell to one of the **471 cell types** available using the followinmg command:
 
 ::
 
