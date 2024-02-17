@@ -1,12 +1,16 @@
 Inputs & Outputs
 ================
 
-SCALT.py requires a scRNA seq row counts matrix as input data. The matrix must be in **.tsv** extension pesenting:
+SCALT.py requires a scRNA seq row counts matrix as input data. The matrix must be in **.tsv** extension reporting:
 
 1. genes on the rows;
 2. cells on the columns.
 
-The first row of the matrix must contain the ids of each cell while the first column must provide the gene ids written either as **gene symbol** or **ensembl id**. 
+The first row of the matrix must contain the ids of each cell while the first column must provide the gene ids written either as **gene symbol** or **ensembl id** (not together). 
+
+.. Note::
+
+   In the case of enesembl gene id, the usage of the version of the id is not allowed. For example, **ENSG00000235430.1** cannot be used in the counts matrix. Use **ENSG00000235430** instead. 
 
 An example of the input file is reported below.
 
@@ -141,29 +145,35 @@ An example of the input file is reported below.
      - 1
      - 1
 
-The application return two output:
+The application returns two outputs:
 
 1. a report file in **.html** format;
-2. a directory names **results_directory** hosting a collection of metadata produced upon classification.
+2. a directory named **results_directory** hosting a collection of metadata produced upon classification.
 
-The metadata lists a series of files which are produced automatically during the classification step and are required for the generatio of the report. Among them, we find:
+The metadata directory lists a series of files which are produced automatically during the classification step and are required for the generation of the report. Among them, we find:
 
-1. **p_values.tsv**, a tabular file reporting a collection of p-values per each cell. Each p-value correspond to a likehood test. Therefore, the number corresponds to the number of cell types tested;
+1. **p_values.tsv**, a tabular file reporting a collection of p-values per each cell. Each p-value indicates to a likehood test. Therefore, the number corresponds to the number of cell types tested;
 2. **deltas.tsv**, a tabular file reporting a series of likelihood differences between the cell type specific model and the mean cell type. The number corresponds to the number of cell types tested;
-3. **originalTables_zipped.zip**,a  zipped file containing the original counts;
-4. **_adj.tsv** file. Counts table upon input set-up performed by SCALT.py by default;
-5. **_adj_genesExpressed_filter.tsv** file. Tabular file reporting either **PASS** or **EXCLUDE** if the cell expresses at least the minimum number of genes set in the -Min parameter or not;
-6. **barplot_cellTypesAboundance.html**, **barplot_survivedCells.html**, **UMAP_2D.html** and **UMAP_3D.html**. Collection of plots visualised in the report file.
+3. **originalTables_zipped.zip**, a zipped file containing the original counts;
+4. **_adj.tsv** file. Counts table after input set-up performed by SCALT.py by default;
+5. **_adj_genesExpressed_filter.tsv** file. Tabular file reporting either **PASS** or **EXCLUDE** if the cell expresses at least the minimum number of genes set in the -Min (or --Threshold) parameter or not;
+6. **barplot_cellTypesAboundance.html**, **barplot_survivedCells.html**, **UMAP_2D.html** and **UMAP_3D.html**. Collection of plots visualized in the report file.
 
 
 SCALT parameters
 ================
 
-SCALT.py makes usage of a collection of both arguments and parameters that can visualized typing the following command:
+SCALT.py makes usage of a collection of both positional arguments and parameters that can visualized typing the following command:
 
 :: 
 
   python3 SCALT.py -h
+
+Or:
+
+::
+
+  python3 SCALT --help
 
 The documentation should appear as follows:
 
@@ -173,19 +183,19 @@ The documentation should appear as follows:
                 [-Types --Types] [-CPUs --CPUs]
                 Sample
 
-1. **Sample** is the only positional argument of the tool. It represents the name of the counts matrix;
+1. **Sample** is the only positional argument of the tool. It represents the scRNA seq counts matrix file;
 2. **-Min** or **--Threshold** is the minimum number of genes that a cell must express to be classified. The **default** value is **250**;
-3. **-Notation** or **--Notation** is the type of gene notation to use. The defaul is **ensembl id**. Instead, write **gene_symbol** to switch to gene symbol notation;
-4. **-Types** or **--Types** is the directory name containg the lists of the cell types to use in the likelihood test. By default, only the pre-compiled lists (DISCO, HPA) are used. To use only the custom lists generated from annotation, insert **custom**. Finally, to utilize only the custom lists generated from the user-defined lists, insert **naive**;
+3. **-Notation** or **--Notation** is the type of gene notation present in the counts. The defaul is **ensembl id**. Instead, write **gene_symbol** to switch to the gene symbol nomenclature;
+4. **-Types** or **--Types** is the name of the directory containg the lists of the cell types to use in the likelihood test. By default, only the pre-compiled lists (DISCO, HPA) are used. To use only the custom lists generated from annotation, insert **custom**. Finally, to utilize only the custom lists generated from the user-defined lists, insert **naive**;
 5. **-CPUs** or **--CPUs** is number of processors employed. The default is **1**;
 6. **-h** or **--help** shows the documentation.
 
 Run SCALT.py
 =========
 
-SCALT.py is quite straightforward sine it requires just the counts table as postional input. 
+SCALT.py is quite straightforward sine it requires just the counts table as positional input. 
 
-Leaving default parameters, the basic comand appears as follows:
+Leaving default parameters, the basic command appears as follows:
 
 ::
 
@@ -205,7 +215,7 @@ Or:
 
    python3 SCALT.py read_counts.tsv --Notation gene_symbol
 
-By default, a cell is classified if it expresses at leat **250** genes. Managing the SCALT.py parameters, this threshold che be modified as follows:
+By default, a cell is classified if it expresses at least **250** genes. Managing the SCALT.py parameters, this threshold che be modified as follows:
 
 ::
 
@@ -249,9 +259,9 @@ The order of parameters is irrelevant.
 Report
 ======
 
-The report is a file in html format composed of a collection of plots reporting the general statistics and classification results of the analysis. The file reports four different plots:
+The report is a file in html format composed of a collection of plots summarizing the general statistics and classification results of the analysis. The file reports four different plots:
 
-1. a bar plot showing how many cells present or not the minimum number of genes expressed for classification;
+1. a bar plot showing how many cells express or not the minimum number of genes for classification;
 2. a second barplot counting how many cells were classified to a cell type cathegory;
 3. a 2D UMAP;
 4. a 3D UMAP.
